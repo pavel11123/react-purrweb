@@ -2,4 +2,187 @@
 
 // ====================START SECTION====================
 
+.start__section {
+  position: relative;
+}
+
+.start__element-gradient {
+  position: absolute;
+  top: rem(55);
+  right: rem(-100);
+  width: rem(783);
+  height: rem(400);
+  z-index: 0;
+  background: rgba(250, 0, 255, 0.2);
+  filter: blur(125px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(26deg);
+  -webkit-transform: rotate(26deg);
+  -moz-transform: rotate(26deg);
+  -ms-transform: rotate(26deg);
+  -o-transform: rotate(26deg);
+  transform-origin: bottom right;
+}
+
+// ====================LEFT BLOCK START====================
+.start__left {
+  min-width: rem(240);
+  justify-content: center;
+  h1 {
+    font-family: $fontTitle;
+    color: $colorWhite;
+    font-weight: 700;
+    font-size: rem(64);
+    line-height: rem(70);
+  }
+
+  &-description {
+    position: relative;
+    height: rem(124);
+    margin-top: rem(90);
+    align-items: flex-end;
+
+    &--line {
+      flex-shrink: 0;
+      width: rem(140);
+      height: 4px;
+      background-color: #ffffff;
+      transform-origin: top left;
+      transform: rotate(-60deg);
+      -webkit-transform: rotate(-60deg);
+      -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+      -o-transform: rotate(-60deg);
+    }
+
+    p {
+      font-family: $fontText;
+      color: $colorWhite;
+      font-weight: 400;
+      font-size: rem(20);
+      line-height: rem(27);
+      transform: translateX(rem(-30));
+      -webkit-transform: translateX(rem(-30));
+      -moz-transform: translateX(rem(-30));
+      -ms-transform: translateX(rem(-30));
+      -o-transform: translateX(rem(-30));
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: rem(125);
+      height: rem(125);
+      background: rgba(96, 92, 234, 0.5);
+      filter: blur(50px);
+      margin-top: rem(-30);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+}
+// ====================LEFT BLOCK START====================
+
+// ====================RIGHT BLOCK START====================
+.start__right {
+  position: relative;
+  max-width: rem(375);
+  justify-content: center;
+  flex: 1;
+  margin-left: auto;
+  margin-right: rem(60);
+
+  &-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.2;
+    filter: blur(rem(40));
+    z-index: 0;
+    -webkit-filter: blur(rem(40));
+  }
+
+  .start__right-img {
+    z-index: 1;
+    max-width: rem(333);
+    max-height: rem(668);
+    min-width: rem(161);
+    min-height: rem(333);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+// ====================RIGHT BLOCK START====================
+
+// ====================START BOTTOM INFO OUR APP====================
+.start__bottom {
+  justify-content: space-between;
+  margin-top: rem(85);
+
+  h2 {
+    font-family: $fontTitle;
+    color: $colorWhite;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(35);
+    line-height: rem(70);
+    text-transform: uppercase;
+  }
+}
+
+.app {
+  align-items: center;
+  margin-right: rem(60);
+  gap: rem(28);
+}
+
+.app__block {
+  border: rem(1.5) solid #ffffff;
+  border-radius: rem(7);
+  -webkit-border-radius: rem(7);
+  -moz-border-radius: rem(7);
+  -ms-border-radius: rem(7);
+  -o-border-radius: rem(7);
+  padding: rem(8) rem(12);
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &-store {
+    width: rem(136);
+  }
+
+  &-google {
+    width: rem(159);
+  }
+
+  &-store,
+  &-google {
+    height: rem(35);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+// ====================START BOTTOM INFO OUR APP====================
+
 // ====================START SECTION====================
