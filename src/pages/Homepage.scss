@@ -1,43 +1,37 @@
 @import "./mixins.scss";
 
-// ====================START SECTION====================
+// --------------------START SECTION--------------------
 
 .start__section {
   position: relative;
 }
 
-.start__element-gradient {
-  position: absolute;
-  top: rem(55);
-  right: rem(-100);
-  width: rem(783);
-  height: rem(400);
-  z-index: 0;
-  background: rgba(250, 0, 255, 0.2);
-  filter: blur(125px);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transform: rotate(26deg);
-  -webkit-transform: rotate(26deg);
-  -moz-transform: rotate(26deg);
-  -ms-transform: rotate(26deg);
-  -o-transform: rotate(26deg);
-  transform-origin: bottom right;
+.start-main {
+  gap: rem(15);
 }
 
 // ====================LEFT BLOCK START====================
 .start__left {
   min-width: rem(240);
   justify-content: center;
+  z-index: 1;
+
   h1 {
     font-family: $fontTitle;
     color: $colorWhite;
     font-weight: 700;
     font-size: rem(64);
     line-height: rem(70);
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(33, 64, 1280, 600);
+      line-height: adaptiv-num-rem(40, 70, 1280, 600);
+    }
+
+    @media (max-width: 600px) {
+      font-size: adaptiv-num-rem(35, 33, 600, 375);
+      line-height: rem(40);
+    }
   }
 
   &-description {
@@ -45,6 +39,11 @@
     height: rem(124);
     margin-top: rem(90);
     align-items: flex-end;
+
+    @media (max-width: 600px) {
+      margin-top: rem(25);
+      align-items: flex-start;
+    }
 
     &--line {
       flex-shrink: 0;
@@ -57,9 +56,14 @@
       -moz-transform: rotate(-60deg);
       -ms-transform: rotate(-60deg);
       -o-transform: rotate(-60deg);
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
 
     p {
+      max-width: rem(380);
       font-family: $fontText;
       color: $colorWhite;
       font-weight: 400;
@@ -70,6 +74,25 @@
       -moz-transform: translateX(rem(-30));
       -ms-transform: translateX(rem(-30));
       -o-transform: translateX(rem(-30));
+
+      @media (max-width: 1280px) {
+        font-size: adaptiv-num-rem(16, 20, 1280, 375);
+        line-height: adaptiv-num-rem(22, 27, 1280, 375);
+      }
+
+      @media (max-width: 600px) {
+        transform: translateX(rem(0));
+        -webkit-transform: translateX(rem(0));
+        -moz-transform: translateX(rem(0));
+        -ms-transform: translateX(rem(0));
+        -o-transform: translateX(rem(0));
+      }
+
+      @media (min-width: 455px) {
+        .start__br-none {
+          display: none;
+        }
+      }
     }
 
     &::before {
@@ -87,6 +110,10 @@
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
 }
@@ -100,6 +127,14 @@
   flex: 1;
   margin-left: auto;
   margin-right: rem(60);
+
+  @media (max-width: 1280px) {
+    margin-right: adaptiv-num-rem(0, 60, 1280, 600);
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
 
   &-filter {
     position: absolute;
@@ -128,12 +163,42 @@
     }
   }
 }
+
+.start__element-gradient {
+  position: absolute;
+  top: rem(55);
+  right: rem(-100);
+  width: rem(783);
+  height: rem(400);
+  z-index: 0;
+  background: rgba(250, 0, 255, 0.2);
+  filter: blur(125px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(26deg);
+  -webkit-transform: rotate(26deg);
+  -moz-transform: rotate(26deg);
+  -ms-transform: rotate(26deg);
+  -o-transform: rotate(26deg);
+  transform-origin: bottom right;
+}
 // ====================RIGHT BLOCK START====================
 
 // ====================START BOTTOM INFO OUR APP====================
 .start__bottom {
   justify-content: space-between;
   margin-top: rem(85);
+  align-items: center;
+  gap: rem(10);
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(35);
+  }
 
   h2 {
     font-family: $fontTitle;
@@ -143,6 +208,16 @@
     font-size: rem(35);
     line-height: rem(70);
     text-transform: uppercase;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(17, 35, 1280, 600);
+      line-height: adaptiv-num-rem(25, 70, 1280, 600);
+    }
+
+    @media (max-width: 600px) {
+      font-size: adaptiv-num-rem(24, 26, 600, 375);
+      line-height: adaptiv-num-rem(29, 35, 600, 375);
+    }
   }
 }
 
@@ -150,6 +225,21 @@
   align-items: center;
   margin-right: rem(60);
   gap: rem(28);
+  justify-content: center;
+
+  @media (max-width: 1280px) {
+    margin-right: adaptiv-num-rem(0, 60, 1280, 600);
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 400px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: rem(25);
+  }
 }
 
 .app__block {
@@ -165,11 +255,11 @@
   cursor: pointer;
 
   &-store {
-    width: rem(136);
+    max-width: rem(136);
   }
 
   &-google {
-    width: rem(159);
+    max-width: rem(159);
   }
 
   &-store,
@@ -181,8 +271,67 @@
       height: 100%;
       object-fit: contain;
     }
+
+    @media (max-width: 400px) {
+      max-width: rem(185);
+      height: rem(60);
+      flex: 1;
+    }
   }
+
+  &:hover {
+    border-color: #87185b;
+  }
+
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 // ====================START BOTTOM INFO OUR APP====================
 
-// ====================START SECTION====================
+// --------------------INFO SECTION--------------------
+.info__section {
+  margin-top: rem(65);
+}
+
+.info-main {
+  gap: rem(80);
+  justify-content: center;
+}
+
+.info__block {
+  padding: rem(65) rem(55);
+  border: rem(2) solid rgba(255, 255, 255, 0.5);
+  border-radius: rem(22);
+  -webkit-border-radius: rem(22);
+  -moz-border-radius: rem(22);
+  -ms-border-radius: rem(22);
+  -o-border-radius: rem(22);
+  flex: 1 1 rem(300);
+  max-width: rem(503);
+  justify-content: center;
+  gap: rem(30);
+
+  p,
+  a {
+    font-family: $fontText;
+    color: $colorWhite;
+  }
+
+  p {
+    max-width: rem(375);
+    font-weight: 700;
+    font-size: rem(30);
+    line-height: rem(41);
+  }
+
+  a {
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: rem(33);
+    text-decoration-line: underline;
+  }
+}
+// --------------------INFO SECTION--------------------
