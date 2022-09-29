@@ -419,6 +419,30 @@
       margin-left: 0;
     }
 
+    h2 {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: rem(40);
+        width: rem(85);
+        height: rem(85);
+        background: #f101bf;
+        opacity: 0.7;
+        filter: blur(rem(50));
+        -webkit-filter: blur(rem(50));
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+
     p {
       padding-top: rem(25);
     }
@@ -427,3 +451,80 @@
 
 // ====================BOTTOM BLOCK NISSION====================
 // --------------------INFO SECTION--------------------
+
+// --------------------VERIFICATION SECTION--------------------
+// ====================BLOCK MAIN VERIFICATION====================
+.verification__section {
+  margin-top: rem(280);
+  background-image: linear-gradient(
+      179.83deg,
+      #000000 -3.1%,
+      rgba(0, 0, 0, 0) 56.76%,
+      #000000 83.92%
+    ),
+    url("../../public/img/background/verification__block-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: rem(470);
+}
+
+.verification__main {
+}
+
+.verification__block {
+  &-left {
+    gap: rem(45);
+  }
+
+  &-right {
+    max-width: rem(323);
+    margin-left: auto;
+    margin-right: rem(60);
+    align-self: flex-end;
+
+    @media (max-width: 1280px) {
+      margin-right: adaptiv-num-rem(0, 60, 1280, 600);
+    }
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+      max-width: rem(315);
+      margin-left: 0;
+    }
+
+    p {
+      padding-top: rem(25);
+    }
+  }
+}
+
+// ====================BLOCK MAIN VERIFICATION====================
+// --------------------VERIFICATION SECTION--------------------
+
+// --------------------integration SECTION--------------------
+// ====================integration BLOCK====================
+.integration__block {
+  &-left {
+    max-width: rem(495);
+
+    p {
+      padding-top: rem(25);
+      max-width: rem(395);
+    }
+  }
+  &-right {
+    flex: 1 1 auto;
+    position: relative;
+  }
+}
+
+// ====================ABSOLUTE DIAGRAM====================
+.diagram {
+  position: absolute;
+}
+
+// ====================ABSOLUTE DIAGRAM====================
+
+// ====================integration BLOCK====================
+// --------------------integration SECTION--------------------
