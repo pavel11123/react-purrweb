@@ -280,7 +280,10 @@
   }
 
   &:hover {
-    border-color: #87185b;
+    border-color: #ea008d;
+    -moz-box-shadow: 0px 0px 14px #ff14a2;
+    -webkit-box-shadow: 0px 0px 14px #ff14a2;
+    box-shadow: 0px 0px 14px #ff14a2;
   }
 
   transition: 0.3s;
@@ -296,12 +299,13 @@
   margin-top: rem(65);
 }
 
-.info-main {
+// ====================TOP BLOCK INFO====================
+.info__main {
   gap: rem(80);
   justify-content: center;
 }
 
-.info__block {
+.info__main-block {
   padding: rem(65) rem(55);
   border: rem(2) solid rgba(255, 255, 255, 0.5);
   border-radius: rem(22);
@@ -309,10 +313,15 @@
   -moz-border-radius: rem(22);
   -ms-border-radius: rem(22);
   -o-border-radius: rem(22);
-  flex: 1 1 rem(300);
+  flex: 1 1 rem(245.5);
   max-width: rem(503);
   justify-content: center;
   gap: rem(30);
+
+  @media (max-width: 1280px) {
+    padding: adaptiv-num-rem(40, 65, 1280, 600)
+      adaptiv-num-rem(30, 55, 1280, 600);
+  }
 
   p,
   a {
@@ -321,10 +330,14 @@
   }
 
   p {
-    max-width: rem(375);
+    max-width: rem(325);
     font-weight: 700;
     font-size: rem(30);
     line-height: rem(41);
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(20, 30, 1280, 600);
+      line-height: adaptiv-num-rem(31, 41, 1280, 600);
+    }
   }
 
   a {
@@ -332,6 +345,85 @@
     font-size: rem(24);
     line-height: rem(33);
     text-decoration-line: underline;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(18, 24, 1280, 600);
+      line-height: adaptiv-num-rem(24, 33, 1280, 600);
+    }
   }
 }
+// ====================TOP BLOCK INFO====================
+
+// ====================BOTTOM BLOCK NISSION====================
+
+.mission {
+  margin-top: rem(250);
+  gap: rem(80);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.mission__block {
+  &-left {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &-img {
+    max-width: rem(999);
+    max-height: rem(498);
+    margin-left: rem(-350);
+  }
+
+  @media (min-width: 601px) {
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &-img,
+  &-mobile--img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-mobile--img {
+    position: relative;
+    padding: 0 0 100% 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &-right {
+    max-width: rem(323);
+    margin-left: auto;
+    margin-right: rem(60);
+
+    @media (max-width: 1280px) {
+      margin-right: adaptiv-num-rem(0, 60, 1280, 600);
+    }
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+      max-width: rem(315);
+      margin-left: 0;
+    }
+
+    p {
+      padding-top: rem(25);
+    }
+  }
+}
+
+// ====================BOTTOM BLOCK NISSION====================
 // --------------------INFO SECTION--------------------

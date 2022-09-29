@@ -43,14 +43,41 @@ const Homepage = () => {
             </div>
           </section>
           <section className="info__section">
-            <div className="info-main d-fl-wrap">
-              <div className="info__block d-fl-col">
-                <p>Would like to become a member, please contact us</p>
-                <a href="/">support@notab.com</a>
+            <div className="info__main d-fl-wrap">
+              <div className="info__main-block d-fl-col">
+                <p>
+                  Would like to become<br></br>a member, please<br></br>contact
+                  us
+                </p>
+                <a href="mailto:support@notab.com">support@notab.com</a>
               </div>
-              <div className="info__block d-fl-col">
+              <div className="info__main-block d-fl-col">
                 <p>Already a partner?</p>
                 <a href="/">Login</a>
+              </div>
+            </div>
+            <div className="mission d-fl">
+              <div className="mission__block mission__block-left">
+                <div className="mission__block-img">
+                  <img
+                    src="./img/photo/phone__mission.png"
+                    alt="PurrWeb NoTab"
+                  />
+                </div>
+              </div>
+              <div className="mission__block mission__block-right">
+                <h2 className="title__block">Our mission and vision</h2>
+                <p className="text__block">
+                  While technology is our sweet spot, we’ve developed our vision
+                  alongside our customers to ensure your everyday problems are
+                  solved through simplistic tools. And as your business grows,
+                  we’ll grow right alongside with you.
+                </p>
+              </div>
+              <div className="mission__block-mobile">
+                <div className="mission__block-mobile--img">
+                  <img src="./img/photo/phone.png" alt="PurrWeb NoTab" />
+                </div>
               </div>
             </div>
           </section>
