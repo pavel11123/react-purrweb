@@ -31,7 +31,7 @@ const Homepage = () => {
             </div>
             <div className="start__bottom d-fl">
               <h2>Download our app</h2>
-              <div className="app d-fl">
+              <div className="start__app app d-fl">
                 <div className="app__block app__block-store d-fl">
                   <img src="./img/icon/app-store.svg" alt="App Store" />
                 </div>
@@ -154,26 +154,26 @@ const Homepage = () => {
                     alt="Diagram Bi Tool Integration"
                   />
                 </div>
-                <div className="d-fl">
-                  <div className="diagram diagram-6">
+                <div className="diagram__pie d-fl">
+                  <div className="diagram__pie-img">
                     <img
                       src="./img/photo/diagram-6.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-7">
+                  <div className="diagram__pie-img">
                     <img
                       src="./img/photo/diagram-7.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-8">
+                  <div className="diagram__pie-img">
                     <img
                       src="./img/photo/diagram-8.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-9">
+                  <div className="diagram__pie-img">
                     <img
                       src="./img/photo/diagram-9.svg"
                       alt="Diagram Bi Tool Integration"
@@ -181,26 +181,26 @@ const Homepage = () => {
                   </div>
                 </div>
 
-                <div className="d-fl">
-                  <div className="diagram diagram-10">
+                <div className="diagram__indicator d-fl">
+                  <div className="diagram__indicator-img">
                     <img
                       src="./img/photo/diagram-10.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-11">
+                  <div className="diagram__indicator-img">
                     <img
                       src="./img/photo/diagram-11.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-12">
+                  <div className="diagram__indicator-img">
                     <img
                       src="./img/photo/diagram-12.svg"
                       alt="Diagram Bi Tool Integration"
                     />
                   </div>
-                  <div className="diagram diagram-13">
+                  <div className="diagram__indicator-img">
                     <img
                       src="./img/photo/diagram-13.svg"
                       alt="Diagram Bi Tool Integration"
@@ -208,6 +208,75 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="code__section">
+          <div className="container">
+            <div className="code__section-wrapper d-fl">
+              <div className="code__block code__block-left">
+                <h2 className="title__block">QR code</h2>
+                <p className="text__block">
+                  No more conflict situations due to wrong order. The guest
+                  selects the positions, and after that an individual QR code of
+                  his order is generated
+                </p>
+                <div className="app d-fl-wrap">
+                  <div className="app__block app__block-store app__block-code">
+                    <img src="./img/icon/app-store.svg" alt="App Store" />
+                  </div>
+                  <div className="app__block app__block-google app__block-code">
+                    <img src="./img/icon/google-play.svg" alt="Google Play" />
+                  </div>
+                </div>
+              </div>
+              <div className="code__block code__block-right d-fl">
+                <div className="code__phone">
+                  <img
+                    src="./img/photo/phone__code-1.png"
+                    alt="verification-ID"
+                  />
+                </div>
+                <div className="code__phone">
+                  <img
+                    src="./img/photo/phone__code-2.png"
+                    alt="verification-ID"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="qr__section">
+          <div className="qr__top">
+            <div className="qr__text qr__text-1">
+              <img src="./img/icon/text__notab.svg" alt="notab" />
+            </div>
+            <div className="qr__text qr__text-2">
+              <img src="./img/icon/text__notab.svg" alt="notab" />
+            </div>
+            <div className="qr__text qr__text-3">
+              <img src="./img/icon/text__notab.svg" alt="notab" />
+            </div>
+            <div className="qr__text qr__text-4">
+              <img src="./img/icon/text__notab.svg" alt="notab" />
+            </div>
+            <div className="qr__arrow">
+              <span>Scan QR-code</span>
+            </div>
+            <div className="qr__img">
+              <img src="./img/photo/qr-code.png" alt="qr-code" />
+            </div>
+          </div>
+          <div className="container">
+            <div className="qr__bottom d-fl-wrap">
+              <h2 className="title__block">Generate your QR-code</h2>
+              <p className="text__block">
+                The guest QR code is scanned
+                <br />
+                by the staff and automatically sent
+              </p>
             </div>
           </div>
         </section>
