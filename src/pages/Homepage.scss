@@ -724,6 +724,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    max-height: rem(668);
     object-fit: contain;
   }
 
@@ -789,3 +790,111 @@
 }
 
 // --------------------QR-CODE SECTION--------------------
+
+// --------------------ordering SECTION--------------------
+.ordering__section {
+  margin-top: rem(190);
+}
+
+.ordering__top {
+  &-text {
+    max-width: rem(421);
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: rem(60);
+
+    @media (max-width: 1280px) {
+      margin-right: adaptiv-num-rem(0, 60, 1280, 600);
+    }
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.ordering__main {
+  position: relative;
+
+  &-text {
+    position: absolute;
+    padding: rem(22);
+    background: #000000;
+    border: rem(0.7) solid rgba(255, 255, 255, 0.5);
+    border-radius: rem(18);
+    -webkit-border-radius: rem(18);
+    -moz-border-radius: rem(18);
+    -ms-border-radius: rem(18);
+    -o-border-radius: rem(18);
+    font-size: calc(100vw / 1440 * 10);
+
+    @media (max-width: 1280px) {
+      padding: adaptiv-num-rem(13, 22, 1280, 375);
+    }
+
+    p {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: rem(23);
+      line-height: rem(27);
+      color: #ffffff;
+
+      @media (max-width: 1280px) {
+        font-size: adaptiv-num-rem(14, 23, 1280, 375);
+        line-height: adaptiv-num-rem(16, 27, 1280, 375);
+      }
+    }
+    &-1 {
+      top: 22.7em;
+      right: 29em;
+    }
+    &-2 {
+      top: 36em;
+      left: 19em;
+    }
+    &-3 {
+      bottom: 24em;
+      left: 40.9em;
+    }
+    &-4 {
+      bottom: 31em;
+      right: 25em;
+    }
+
+    @media (min-width: 1440px) {
+      &-1 {
+        top: rem(227);
+        right: rem(290);
+      }
+      &-2 {
+        top: rem(360);
+        left: rem(190);
+      }
+      &-3 {
+        bottom: rem(240);
+        left: rem(409);
+      }
+      &-4 {
+        bottom: rem(310);
+        right: rem(250);
+      }
+    }
+  }
+}
+
+.ordering__img {
+  position: relative;
+  padding: 0 0 83.75% 0;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: rem(1039);
+    object-fit: contain;
+  }
+}
+// --------------------ordering SECTION--------------------

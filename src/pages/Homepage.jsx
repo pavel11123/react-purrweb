@@ -280,6 +280,54 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+
+        <section className="ordering__section">
+          <div className="container">
+            <div className="ordering__top d-fl">
+              <div className="ordering__top-text d-fl-col">
+                <h2 className="title__block">
+                  Easier ordering.
+                  <br />
+                  Happier guests.
+                </h2>
+                <p className="text__block">
+                  NoTab makes it simple for patrons to easily
+                </p>
+              </div>
+            </div>
+            <div className="ordering__main">
+              <div className="ordering__img">
+                <img src="./img/photo/phone__ordering.png" alt="qr-code" />
+              </div>
+              <div className="ordering__main-text ordering__main-text-1">
+                <p>
+                  No more lost or
+                  <br />
+                  forgotten credit cards
+                </p>
+              </div>
+              <div className="ordering__main-text ordering__main-text-2">
+                <p>
+                  No more lost or
+                  <br />
+                  forgotten credit cards
+                </p>
+              </div>
+              <div className="ordering__main-text ordering__main-text-3">
+                <p>Skip the line</p>
+              </div>
+              <div className="ordering__main-text ordering__main-text-4">
+                <p>
+                  No more split
+                  <br />
+                  your tab
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section"></section>
       </div>
     </>
   );
