@@ -1,1 +1,45 @@
 @import "./mixins.scss";
+
+.footer {
+  padding: rem(155) 0 rem(85) 0;
+  position: relative;
+
+  &-gradient {
+    font-size: calc(100vw / 1440 * 10);
+    position: absolute;
+    bottom: -20em;
+    left: -5em;
+    width: 40em;
+    height: 40em;
+    max-width: rem(400);
+    max-height: rem(400);
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(5.78deg);
+    z-index: 0;
+  }
+}
+
+.footer__main {
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  a,
+  span {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(25);
+    color: #ffffff;
+  }
+}
+
+.footer__block-left {
+  gap: rem(16);
+}
+.footer__block-right {
+  gap: rem(25);
+}

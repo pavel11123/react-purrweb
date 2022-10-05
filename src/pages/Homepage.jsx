@@ -327,7 +327,153 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className="section"></section>
+        <section className="notab__section">
+          <div className="notab__text">
+            <span>notabnotabnotab</span>
+          </div>
+          <div className="notab__text">
+            <span>notabnotabnotab</span>
+          </div>
+          <div className="notab__text">
+            <span>notabnotabnotab</span>
+          </div>
+          <div className="notab__text">
+            <span>notabnotabnotab</span>
+          </div>
+          <div className="notab__text">
+            <span>notabnotabnotab</span>
+          </div>
+          <div className="notab__phone-wrapper d-fl">
+            <div className="container">
+              <div className="notab__phone">
+                <img src="../../img/photo/phone__notab.png" alt="phone notab" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="feedback__section">
+          <div className="container">
+            <div className="feedback__top d-fl-col">
+              <div className="feedback__top-gradient"></div>
+              <h2 className="title__block">Get In Touch</h2>
+              <p className="text__block">
+                Have questions about Noble or just want to say hello? <br />
+                Drop us a line and a member of our team will getback to you
+                shortly.
+              </p>
+            </div>
+            <form name="form" className="feedback__form d-fl-col">
+              <div class="input-wrapper d-fl">
+                <input
+                  type="text"
+                  name="form__name"
+                  id="form__name"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label class="form__label" for="form__name">
+                  Name
+                </label>
+              </div>
+
+              <div class="input-wrapper d-fl">
+                <input
+                  type="text"
+                  name="form__vname"
+                  id="form__vname"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label class="form__label" for="form__vname">
+                  Venue Name
+                </label>
+              </div>
+
+              <div class="input__general d-fl">
+                <div className="input-wrapper d-fl">
+                  <input
+                    type="text"
+                    name="form__vcity"
+                    id="form__vcity"
+                    class="form__input"
+                    placeholder=" "
+                  />
+                  <label class="form__label" for="form__vcity">
+                    Venue City
+                  </label>
+                </div>
+                <div className="input-wrapper d-fl">
+                  <input
+                    type="text"
+                    name="form__city"
+                    id="form__city"
+                    class="form__input"
+                    placeholder=" "
+                  />
+                  <label class="form__label" for="form__city">
+                    State City
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-wrapper d-fl">
+                <input
+                  type="text"
+                  name="form__email"
+                  id="form__email"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label class="form__label" for="form__email">
+                  Email
+                </label>
+              </div>
+
+              <div class="input-wrapper d-fl">
+                <input
+                  type="text"
+                  name="form__subject"
+                  id="form__subject"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label class="form__label" for="form__subject">
+                  Subject
+                </label>
+              </div>
+
+              <div class="input-wrapper d-fl">
+                <textarea
+                  type="text"
+                  name="form__message"
+                  id="form__message"
+                  class="form__input form__message"
+                  placeholder=" "
+                />
+                <label class="form__label" for="form__message">
+                  Message
+                </label>
+              </div>
+
+              <button className="form__btn">Send</button>
+
+              <div className="feedback__form-gradient"></div>
+            </form>
+
+            <div className="feedback__bottom d-fl-col">
+              <h3>DOWNLOAD OUR APP</h3>
+              <div className="app d-fl-wrap">
+                <a href="/" className="app__block app__block-store">
+                  <img src="./img/icon/app-store.svg" alt="App Store" />
+                </a>
+                <a href="/" className="app__block app__block-google">
+                  <img src="./img/icon/google-play.svg" alt="Google Play" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

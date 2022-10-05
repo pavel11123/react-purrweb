@@ -898,3 +898,223 @@
   }
 }
 // --------------------ordering SECTION--------------------
+
+// --------------------ordering SECTION--------------------
+.notab__section {
+  position: relative;
+}
+
+.notab__text {
+  margin-left: -20em;
+
+  span {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(210);
+    line-height: rem(210);
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    text-shadow: 0.5px 0.5px 0.5px #8b8b8b, 0 0.5px 0.5px #8b8b8b,
+      0.5px 0 0.5px #8b8b8b, -0.5px -0.5px 0.5px #8b8b8b;
+
+    @media (max-width: 1270px) {
+      font-size: adaptiv-num-rem(80, 210, 1270, 600);
+      line-height: adaptiv-num-rem(80, 210, 1270, 600);
+    }
+  }
+}
+
+.notab__phone-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    360deg,
+    #000000 6.8%,
+    rgba(0, 0, 0, 0) 51.62%,
+    #000000 97.38%
+  );
+}
+
+.notab__phone {
+  font-size: calc(100vw / 1440 * 10);
+  position: relative;
+  width: 85.9em;
+  height: 42.9em;
+  max-width: rem(859);
+  max-height: rem(429);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+// --------------------ordering SECTION--------------------
+
+// --------------------ordering SECTION--------------------
+.feedback__section {
+  gap: rem(25);
+}
+
+.feedback__top {
+  align-items: center;
+  position: relative;
+
+  h2,
+  p {
+    z-index: 1;
+  }
+
+  p {
+    text-align: center;
+    max-width: rem(580);
+  }
+
+  &-gradient {
+    font-size: calc(100vw / 1440 * 10);
+    position: absolute;
+    top: -7em;
+    left: 23em;
+    width: 25em;
+    height: 25em;
+    max-width: rem(250);
+    max-height: rem(250);
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(5.78deg);
+    z-index: 0;
+  }
+}
+
+.feedback__form {
+  position: relative;
+  max-width: rem(820);
+  align-items: center;
+  margin: rem(80) auto 0 auto;
+  gap: rem(23);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input__general,
+.input-wrapper {
+  width: 100%;
+}
+
+.input__general {
+  gap: rem(23);
+}
+
+.form__input,
+.form__label {
+  padding: rem(29) rem(23);
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: rem(25);
+}
+
+.form__input {
+  flex: 1;
+  background: #ffffff;
+  border: rem(1) solid #5c5c5c;
+  border-radius: rem(10);
+  -webkit-border-radius: rem(10);
+  -moz-border-radius: rem(10);
+  -ms-border-radius: rem(10);
+  -o-border-radius: rem(10);
+  color: #000000;
+  resize: none;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  display: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #bfbfbf;
+}
+
+.form__message {
+  flex: 1;
+  min-height: rem(200);
+}
+
+.form__btn {
+  margin-top: rem(40);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(29);
+  color: #ffffff;
+  background: #000000;
+  border: rem(1) solid #ffffff;
+  border-radius: rem(10);
+  -webkit-border-radius: rem(10);
+  -moz-border-radius: rem(10);
+  -ms-border-radius: rem(10);
+  -o-border-radius: rem(10);
+  padding: rem(25) rem(167);
+}
+
+.feedback__form-gradient {
+  font-size: calc(100vw / 1440 * 10);
+  position: absolute;
+  bottom: -2em;
+  right: -45em;
+  width: 34em;
+  height: 34em;
+  max-width: rem(340);
+  max-height: rem(340);
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  opacity: 0.3;
+  filter: blur(125px);
+  transform: rotate(5.78deg);
+  z-index: 0;
+}
+
+.feedback__bottom {
+  align-items: center;
+  margin-top: rem(90);
+  gap: rem(35);
+
+  h3 {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(24);
+    line-height: rem(33);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  .app__block {
+    max-width: rem(292);
+    height: rem(82);
+
+    &-store {
+      max-width: rem(259);
+    }
+  }
+}
+
+// --------------------ordering SECTION--------------------
