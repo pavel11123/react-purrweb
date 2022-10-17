@@ -2,6 +2,12 @@
 @import "./base.scss";
 @import "./mixins.scss";
 
+html {
+  @media (min-width: 1441px) {
+    font-size: calc(100vw / 1440 * 16);
+  }
+}
+
 // ---------Оболочка-----------
 .wrapper {
   min-height: 100%;
@@ -16,6 +22,12 @@
   max-width: rem(1270);
   margin: 0 auto;
   padding: 0 rem(15) 0 rem(15);
+
+  @media (min-width: 1441px) {
+    width: 127rem;
+    max-width: 100%;
+    padding: 0 rem(45) 0 rem(45);
+  }
 }
 // ---------Оболочка-----------
 
@@ -43,6 +55,11 @@
 .d-fl-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.d-fl-wrap--reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 // ---------стандартные flex стили-----------
 

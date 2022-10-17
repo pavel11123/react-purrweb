@@ -2,8 +2,11 @@
 .header {
   padding: rem(40) 0 rem(30) 0;
   z-index: 1;
+  padding: rem(40) 0 rem(30) 0;
 
-  padding: rem(40) 0 adaptiv-num-rem(65, 30, 1280, 375) 0;
+  @media (max-width: 1280px) {
+    padding: rem(40) 0 adaptiv-num-rem(65, 30, 1280, 375) 0;
+  }
 
   &__main {
     gap: rem(110);
@@ -25,6 +28,11 @@
       min-width: rem(52);
       min-height: rem(53);
 
+      @media (min-width: 1441px) {
+        width: rem(107);
+        height: rem(109);
+      }
+
       @media (max-width: 600px) {
         max-width: rem(52);
         max-height: rem(53);
@@ -36,6 +44,11 @@
       max-height: rem(25);
       min-width: rem(47);
       min-height: rem(12);
+
+      @media (min-width: 1441px) {
+        width: rem(107);
+        height: rem(109);
+      }
 
       @media (max-width: 600px) {
         max-width: rem(47);
@@ -60,6 +73,8 @@
       content: " ";
       display: block;
       background-image: url("../../../public/img/icon/login.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
       width: rem(26);
       height: rem(25);
       margin-right: rem(12);

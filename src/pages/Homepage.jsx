@@ -85,8 +85,8 @@ const Homepage = () => {
         </section>
         <section className="verification__section">
           <div className="container d-fl-col">
-            <div className="verification__main d-fl">
-              <div className="verification__block verification__block-left d-fl">
+            <div className="verification__main d-fl-wrap--reverse">
+              <div className="verification__block verification__block-left d-fl-wrap">
                 <div className="verification__phone">
                   <img
                     src="./img/photo/verification-1.png"
@@ -114,7 +114,7 @@ const Homepage = () => {
         </section>
         <section className="integration__section">
           <div className="container">
-            <div className="integration__section-wrapper d-fl">
+            <div className="integration__section-wrapper d-fl-wrap">
               <div className="integration__block integration__block-left">
                 <h2 className="title__block">BI Tool Integration</h2>
                 <p className="text__block">
@@ -212,7 +212,9 @@ const Homepage = () => {
           </div>
         </section>
         <section className="code__section">
-          <div className="container">
+          <div className="code__section-back--1"></div>
+          <div className="code__section-back--2"></div>
+          <div className="container code__container">
             <div className="code__section-wrapper d-fl">
               <div className="code__block code__block-left">
                 <h2 className="title__block">QR code</h2>
@@ -269,7 +271,7 @@ const Homepage = () => {
               <img src="./img/photo/qr-code.png" alt="qr-code" />
             </div>
           </div>
-          <div className="container">
+          <div className="container qr__section-container">
             <div className="qr__bottom d-fl-wrap">
               <h2 className="title__block">Generate your QR-code</h2>
               <p className="text__block">
